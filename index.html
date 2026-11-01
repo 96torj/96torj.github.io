@@ -92,6 +92,14 @@
   .job .where{font-size:14px;color:var(--muted);margin-bottom:10px}
   .job p{margin:0;color:var(--text-2);max-width:68ch}
 
+  /* References */
+  .refs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+  .ref{background:#fff;border:1px solid var(--teal-line);border-radius:8px;padding:24px;border-top:4px solid var(--accent)}
+  .ref small{display:block;font-family:'Space Grotesk',sans-serif;font-size:12px;letter-spacing:2px;color:var(--teal);margin-bottom:8px}
+  .ref h3{font-size:18px;color:var(--ink)}
+  .ref .org{font-size:14px;color:var(--muted);margin:2px 0 14px}
+  .ref a{font-size:15px;font-weight:500;word-break:break-word}
+
   /* Contact */
   .contact{background:var(--ink);color:var(--on-dark);text-align:center;padding:84px 0}
   .contact h2{font-size:clamp(28px,4vw,40px);color:#fff}
@@ -103,7 +111,7 @@
     nav ul{display:none}
     .about,.card{grid-template-columns:1fr}
     .shot{border-right:0;border-bottom:1px solid var(--teal-line);min-height:200px}
-    .skills{grid-template-columns:1fr}
+    .skills,.refs{grid-template-columns:1fr}
     section{padding:60px 0}
     .hero{padding:64px 0 72px}
   }
@@ -119,6 +127,7 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#references">References</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -243,6 +252,33 @@
       </div>
     </div>
   </section>
+
+  <section id="references">
+    <div class="wrap">
+      <p class="eyebrow">REFERENCES</p>
+      <h2 class="sec-title">People who can speak to my work</h2>
+      <div class="refs">
+        <div class="ref">
+          <small>EMPLOYER</small>
+          <h3>Angelo Capuccili</h3>
+          <div class="org">Supervisor · Parma Café</div>
+          <a href="tel:+15149790993">(514) 979-0993</a>
+        </div>
+        <div class="ref">
+          <small>SCHOOL STAGE COORDINATOR</small>
+          <h3>Azhar Awan</h3>
+          <div class="org">Pearson Electrotechnology Centre</div>
+          <a href="mailto:aawan@lbpearson.ca">aawan@lbpearson.ca</a>
+        </div>
+        <div class="ref">
+          <small>TEACHER / MENTOR</small>
+          <h3>Andres Gonzalez Andrade</h3>
+          <div class="org">Pearson Electrotechnology Centre</div>
+          <a href="mailto:a.gonzalezandrade@lbpearson.ca">a.gonzalezandrade@lbpearson.ca</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <section class="contact" id="contact">
@@ -256,7 +292,7 @@
     </div>
   </div>
 </section>
-<footer>© 2026 Ryan Torres · References available on request</footer>
+<footer>© 2026 Ryan Torres</footer>
 
 </body>
 </html>
