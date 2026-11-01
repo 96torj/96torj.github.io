@@ -36,6 +36,8 @@
   .hero{background:var(--ink);color:var(--on-dark);padding:88px 0 96px}
   .bar{width:40px;height:4px;background:var(--accent);margin-bottom:22px}
   .hero h1{font-size:clamp(44px,7vw,72px);line-height:1;color:#fff;letter-spacing:.5px}
+  .hero .phone{margin:14px 0 0;font-size:18px;font-weight:500}
+  .hero .phone a{color:var(--accent)}
   .hero .role{margin:16px 0 0;font-size:18px;color:var(--on-dark-2)}
   .hero .lead{max-width:620px;margin:24px 0 0;font-size:17px;color:var(--on-dark)}
   .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
@@ -64,7 +66,10 @@
   .projects{display:grid;gap:28px}
   .card{display:grid;grid-template-columns:1fr 1.1fr;gap:0;background:#fff;border:1px solid var(--teal-line);border-radius:10px;overflow:hidden}
   .shot{background:var(--ink-2);display:flex;align-items:center;justify-content:center;min-height:280px;padding:24px;text-align:center;color:var(--on-dark-2);font-size:14px;border-right:1px solid var(--teal-line)}
-  .shot img{width:100%;height:100%;object-fit:cover;display:block}
+  .shot.has-img{padding:0;display:block;position:relative}
+  .shot.has-img a{position:absolute;inset:0;display:block}
+  .shot img{width:100%;height:100%;object-fit:cover;object-position:left top;display:block}
+  .shot .zoom{position:absolute;right:12px;bottom:12px;background:rgba(21,26,33,.88);color:#fff;font-size:12px;padding:4px 10px;border-radius:4px}
   .shot .ph{border:1px dashed #4A5663;border-radius:8px;padding:22px;max-width:280px}
   .card .body{padding:30px 32px}
   .card h3{font-size:22px;color:var(--ink)}
@@ -137,6 +142,7 @@
   <div class="wrap">
     <div class="bar"></div>
     <h1>RYAN TORRES</h1>
+    <p class="phone"><a href="tel:+15146321437">(514) 632-1437</a></p>
     <p class="role">IT Support Student · Hardware &amp; Desktop Support · Montréal, QC</p>
     <p class="lead">IT support student with a background in team leadership, building hands-on experience in hardware, Windows, networking and server administration. Seeking an IT internship where I can support users, keep systems running smoothly and continue to grow.</p>
     <div class="btns">
@@ -177,9 +183,11 @@
       <div class="projects">
 
         <article class="card">
-          <div class="shot">
-            <!-- Replace with: <img src="images/server-dashboard.png" alt="Server monitoring dashboard"> -->
-            <div class="ph">Add a screenshot here: your VPS panel, monitoring dashboard or Notion tracker (blur IPs and passwords)</div>
+          <div class="shot has-img">
+            <a href="images/admin-panel.png" target="_blank" rel="noopener">
+              <img src="images/admin-panel.png" alt="Server admin panel for managing user accounts, with personal data blurred">
+              <span class="zoom">View full size</span>
+            </a>
           </div>
           <div class="body">
             <h3>Self-Hosted Multiplayer Server</h3>
@@ -196,9 +204,28 @@
         </article>
 
         <article class="card">
+          <div class="shot has-img">
+            <a href="images/notion-docs.png" target="_blank" rel="noopener">
+              <img src="images/notion-docs.png" alt="Notion boards organizing server systems and a patch log">
+              <span class="zoom">View full size</span>
+            </a>
+          </div>
+          <div class="body">
+            <h3>Server Documentation &amp; Patch Tracking</h3>
+            <p class="meta">Notion · 2024 – present</p>
+            <div class="tags"><span class="tag">Notion</span><span class="tag">Documentation</span><span class="tag">Change tracking</span></div>
+            <ul>
+              <li>Organize server systems and configuration notes into categorized Notion boards</li>
+              <li>Keep a patch log tracking each update from planned to done</li>
+              <li>Write things down so fixes and setups can be repeated, not reinvented</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
           <div class="shot">
             <!-- Replace with: <img src="images/ad-lab.png" alt="Active Directory Users and Computers in the lab domain"> -->
-            <div class="ph">Add a screenshot here: Active Directory Users and Computers, DNS Manager or your VM list</div>
+            <div class="ph">Screenshots to be added</div>
           </div>
           <div class="body">
             <h3>Windows Server Domain Lab</h3>
