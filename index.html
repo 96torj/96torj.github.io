@@ -130,6 +130,7 @@
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#agents">Agents</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#references">References</a></li>
@@ -181,25 +182,6 @@
       <p class="eyebrow">PROJECTS</p>
       <h2 class="sec-title">What I've built</h2>
       <div class="projects">
-
-        <article class="card">
-          <div class="shot">
-            <!-- Replace with a screenshot: <img src="images/rtkit.webp" alt="RT Kit main window"> and add class has-img -->
-            <img src="images/rtkit-logo.png" alt="RT Kit logo" style="width:120px;height:120px">
-          </div>
-          <div class="body">
-            <h3>RT Kit: PC Support &amp; Backup Toolkit</h3>
-            <p class="meta">Personal project · 2026</p>
-            <div class="tags"><span class="tag">PowerShell</span><span class="tag">Windows Forms</span><span class="tag">robocopy</span><span class="tag">rclone</span><span class="tag">Task Scheduler</span><span class="tag">Defender</span></div>
-            <ul>
-              <li>Built because backing up client PCs by hand in Command Prompt was slow and easy to get wrong, especially on PCs that wouldn't boot</li>
-              <li>Portable USB toolkit with one login: backups, virus scans, disk cleanup, network diagnosis and firewall control</li>
-              <li>Installs a nightly cloud backup agent, turning a one-time repair into an ongoing backup service</li>
-              <li>Keeps client cloud logins encrypted on the USB and writes a report for every job</li>
-            </ul>
-            <a class="more" href="https://github.com/96torj/rtkit" target="_blank" rel="noopener">View on GitHub →</a>
-          </div>
-        </article>
 
         <article class="card">
           <div class="shot has-img">
@@ -263,7 +245,38 @@
     </div>
   </section>
 
-  <section id="skills">
+  <section id="agents">
+    <div class="wrap">
+      <p class="eyebrow">AGENTS</p>
+      <h2 class="sec-title">Automation I've built</h2>
+      <div class="projects">
+
+        <article class="card">
+          <div class="shot has-img">
+            <a href="images/rtkit.webp" target="_blank" rel="noopener">
+              <img src="images/rtkit.webp" alt="RT Kit main window: USB Backup page with drive and user selection">
+              <span class="zoom">View full size</span>
+            </a>
+          </div>
+          <div class="body">
+            <h3>RT Kit: PC Support &amp; Backup Toolkit</h3>
+            <p class="meta">Personal project · 2026</p>
+            <div class="tags"><span class="tag">PowerShell</span><span class="tag">Windows Forms</span><span class="tag">robocopy</span><span class="tag">rclone</span><span class="tag">Task Scheduler</span><span class="tag">Defender</span></div>
+            <ul>
+              <li>Built because backing up client PCs by hand in Command Prompt was slow and easy to get wrong, especially on PCs that wouldn't boot</li>
+              <li>Portable USB toolkit with one login: backups, virus scans, disk cleanup, network diagnosis and firewall control</li>
+              <li>Installs a nightly cloud backup agent, turning a one-time repair into an ongoing backup service</li>
+              <li>Keeps client cloud logins encrypted on the USB and writes a report for every job</li>
+            </ul>
+            <a class="more" href="https://github.com/96torj/rtkit" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="alt">
     <div class="wrap">
       <p class="eyebrow">SKILLS</p>
       <h2 class="sec-title">What I work with</h2>
@@ -281,7 +294,7 @@
     </div>
   </section>
 
-  <section id="experience" class="alt">
+  <section id="experience">
     <div class="wrap">
       <p class="eyebrow">EXPERIENCE</p>
       <h2 class="sec-title">Where I've worked</h2>
@@ -302,7 +315,7 @@
     </div>
   </section>
 
-  <section id="references">
+  <section id="references" class="alt">
     <div class="wrap">
       <p class="eyebrow">REFERENCES</p>
       <h2 class="sec-title">People who can speak to my work</h2>
